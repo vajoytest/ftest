@@ -30,7 +30,7 @@
 <div style="width: 3.75rem; position:relative; margin:auto;">
     <!--结果页的开始-->
     <div class="a410">
-        44444新方案4444
+        555555555555
     </div>
     <!--结果页的结束-->
 </div>
@@ -57,7 +57,7 @@
         </div>
     </div>
     <div id="raw-certificate">
-        <img src="img/certificate-bg/Image 1.png" class="bitmap" />
+        <img src="img/certificate-bg/Image 1.jpg" class="bitmap" />
         <div class="u7f16u7ec42">
             <div id="img-notice" class="u817eu8bafu6587u65c5u9080u4f60u4e00u8d77u4e3au7231u4ee3u8a00uff0cu5b88u62a4u6b66u6c49u626bu63cf">
                 一起一起来测试截图能力呗<br />12345
@@ -155,7 +155,7 @@
         ctx.fillRect( 0, 0, rawRect.width, rawRect.height );
         // 绘制最大张的背景
         let imgBg = new Image();
-        imgBg.src = "img/certificate-bg/Image 1.png";
+        imgBg.src = "img/certificate-bg/Image 1.jpg";
         imgBg.onload = function(){
             ctx.drawImage(imgBg, 0, 0, rawRect.width, rawRect.height );
 
@@ -193,13 +193,13 @@
             img.setAttribute('src', canvas.toDataURL('image/jpeg', 1 ));
             retImgDom.appendChild(img);
             callback && callback();
-        }, 100);
+        }, 300);
     }
 
     // 把证书涉及的图片都先预加载完
     function preLoadImgForCertificate(callback) {
         toggleLoading(true);
-        let imgList = ['img/certificate-bg/Image 1.png', './img/3-2-6-u4e8cu7ef4u7801-1@2x.png', './img/3-2-6-bitmap-1@2x.png']
+        let imgList = ['img/certificate-bg/Image 1.jpg', './img/3-2-6-u4e8cu7ef4u7801-1@2x.png', './img/3-2-6-bitmap-1@2x.png']
         let PromiseList = []
         imgList.forEach(imgUrl => {
             PromiseList.push(new Promise((resolve, reject) => {
