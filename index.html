@@ -51,7 +51,7 @@
 <!--首页代言弹窗结束-->
 
 <!--证书弹窗开始-->
-<div class="dialog-bg a326" id="certificate-dialog">
+<div class="dialog-bg a326 hide" id="certificate-dialog">
     <div class="certificate-dialog-bg" id="img-certificate">
         <div class="u5173u95ed">
             <img src="./img/3-2-6-combined-shape@2x.png" class="combinedshape" />
@@ -137,7 +137,7 @@
             document.getElementById('img-certificate').style.backgroundImage = 'url(' + dataURL + ')';
             callback && callback();
         }).catch(() => {
-            toggleErrorDialog(true);
+            alert('9999');
         })
     }
 
