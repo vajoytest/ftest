@@ -30,7 +30,7 @@
 <div style="width: 3.75rem; position:relative; margin:auto;">
     <!--结果页的开始-->
     <div class="a410">
-        新方案
+        新方案2
     </div>
     <!--结果页的结束-->
 </div>
@@ -112,9 +112,9 @@
     </div>
 </article>
 <!--（异常提示）弹窗结束-->
-<!--<canvas id="myCanvas" width="260" height="406" >-->
-<!--    您的浏览器不支持canvas，建议使用最新版的Chrome-->
-<!--</canvas>-->
+<canvas id="myCanvas" width="260" height="406" style="position: relative; z-index: 999" >
+    您的浏览器不支持canvas，建议使用最新版的Chrome
+</canvas>
 <script>
     function toggleLoading(isShow) {
         let operate = isShow ? 'removeClass' : 'addClass'
@@ -146,8 +146,8 @@
         //     alert('9999');
         // })
 
-        let canvas = document.createElement( 'canvas' );
-        //let canvas = document.getElementById("myCanvas");
+        //let canvas = document.createElement( 'canvas' );
+        let canvas = document.getElementById("myCanvas");
         let ctx = canvas.getContext( '2d' );
         canvas.width = rawRect.width;
         canvas.height = rawRect.height;
