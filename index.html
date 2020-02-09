@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=UTF-8>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-TGideas">
+    <meta name="Copyright" content="Tencent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <script src="./js/rem.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/canvas2html.js"></script>
+    <link rel="stylesheet" href="./css/tfont.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body style="margin: 0;
+ background: rgba(234, 242, 255, 1.0);">
+
+<div style="width: 3.75rem; position:relative; margin:auto;">
+    <!--结果页的开始-->
+    <div class="a410">
+        hello
+    </div>
+    <!--结果页的结束-->
+</div>
+
+
+<!--首页代言弹窗开始-->
+<div class="dialog-bg" id="index-dialog">
+    <div class="index-dialog-wrap">
+        <div class="rectangle">
+        </div>
+        <div class="u6211u8981u4ee3u8a00" id="index-dialog-button">
+            我要测试
+        </div>
+    </div>
+
+</div>
+<!--首页代言弹窗结束-->
+
+<!--证书弹窗开始-->
+<div class="dialog-bg a326 hide" id="certificate-dialog">
+    <div class="certificate-dialog-bg" id="img-certificate">
+        <div class="u5173u95ed">
+            <img src="./img/3-2-6-combined-shape@2x.png" class="combinedshape" />
+        </div>
+    </div>
+    <div id="raw-certificate">
+        <img src="img/certificate-bg/Image 1.png" class="bitmap" />
+        <div class="u7f16u7ec42">
+            <div class="u817eu8bafu6587u65c5u9080u4f60u4e00u8d77u4e3au7231u4ee3u8a00uff0cu5b88u62a4u6b66u6c49u626bu63cf">
+                一起一起来测试截图能力呗<br />12345
+            </div>
+            <div class="u7f16u7ec423">
+                <img src="./img/3-2-6-u4e8cu7ef4u7801-1@2x.png" class="u4e8cu7ef4u78011" />
+            </div>
+        </div>
+        <div class="u7f16u7ec424">
+            <div class="frank">
+                ewwrerer
+            </div>
+            <div class="a20200205">
+                2000/02/05
+            </div>
+        </div>
+        <img src="./img/3-2-6-bitmap-1@2x.png" class="bitmap1" />
+    </div>
+
+    <div class="cer-bottom-note">长按图片保存到手机，分享到朋友圈完成代言</div>
+</div>
+<!--证书弹窗结束-->
+
+<!--加载中转菊花开始-->
+<div class="zero-ui-dialog zero-ui-dialog-notice hide" id="lm_1581146183484" style="opacity: 1;">
+    <div class="zero-dialog-notice-container">
+        <div class="zero-ui-loading-circle">
+            <div class="zul-circle1"></div>
+            <div class="zul-circle2"></div>
+            <div class="zul-circle3"></div>
+            <div class="zul-circle4"></div>
+            <div class="zul-circle5"></div>
+            <div class="zul-circle6"></div>
+            <div class="zul-circle7"></div>
+            <div class="zul-circle8"></div>
+            <div class="zul-circle9"></div>
+            <div class="zul-circle10"></div>
+            <div class="zul-circle11"></div>
+            <div class="zul-circle12"></div>
+        </div>
+        <span class="zero-ui-loading-tips"></span></div>
+</div>
+<!--加载中转菊花结束-->
+
+<!--（异常提示）弹窗开始-->
+<article class="mod-game-dialog hide" id="zero-dialog">
+    <div class="mod-game-dialog-content">
+        <div class="mod-txt">加载图片异常，请稍后重试</div>
+        <div class="mod-btn">
+            <button class="embed-btn-mod" data-event="zero_event_1581146510432">确定</button>
+        </div>
+    </div>
+</article>
+<!--（异常提示）弹窗结束-->
+
+<script>
+    function toggleLoading(isShow) {
+        let operate = isShow ? 'removeClass' : 'addClass'
+        $('.zero-ui-dialog')[operate]('hide')
+    }
+
+    function toggleErrorDialog(isShow) {
+        let operate = isShow ? 'removeClass' : 'addClass'
+        $('#zero-dialog')[operate]('hide')
+    }
+
+    // 生成证书图片
+    function generateCertificateImg(callback) {
+        let raw = document.getElementById('raw-certificate');
+        let rect = raw.getBoundingClientRect();
+        html2canvas(raw, {
+            width: rect.width,//设置canvas尺寸与所截图尺寸相同，防止白边
+            height: rect.height,//防止白边
+        }).then(function(canvas) {
+            var dataURL = canvas.toDataURL("image/png");
+            document.getElementById('img-certificate').style.backgroundImage = 'url(' + dataURL + ')';
+            callback && callback();
+        }).catch(() => {
+            toggleErrorDialog(true);
+        })
+    }
+
+    // 把证书涉及的图片都先预加载完
+    function preLoadImgForCertificate(callback) {
+        toggleLoading(true);
+        let imgList = ['img/certificate-bg/Image 1.png', './img/3-2-6-u4e8cu7ef4u7801-1@2x.png', './img/3-2-6-bitmap-1@2x.png']
+        let PromiseList = []
+        imgList.forEach(imgUrl => {
+            PromiseList.push(new Promise((resolve, reject) => {
+                let img = new Image()
+                img.onload = resolve
+                img.onabort = img.onerror = reject
+                img.src = imgUrl
+            }))
+        })
+        Promise.all(PromiseList).then(() => {
+            toggleLoading();
+            callback && callback()
+        }).catch(() => {
+            toggleLoading();
+            toggleErrorDialog(true);
+        })
+    }
+
+
+    // "我要代言" 按钮点击
+    $('#index-dialog-button').click(function () {
+        //$('#index-dialog')
+        preLoadImgForCertificate(() => {
+            $('#index-dialog').addClass('hide');
+            $('#certificate-dialog').removeClass('hide');
+            setTimeout(generateCertificateImg, 10);
+        })
+    })
+
+
+</script>
+</body>
+
+</html>

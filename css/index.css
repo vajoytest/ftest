@@ -1,0 +1,1150 @@
+/*************extra added starts*************/
+.hide, div.hide {
+    display: none;
+}
+
+.index-dialog-wrap {
+    background: rgba(0, 79, 226, 1.0);
+    position: fixed;
+    bottom: -0.04rem;
+    left: 0;
+    width: 3.75rem;
+    height: 3.89rem;
+}
+
+#raw-certificate {
+    background: rgba(0, 79, 226, 1.0);
+    position: absolute;
+    top: -5rem;
+    height: 4.76rem;
+    width: 3.04rem;
+    margin: 0;
+    left: 0.36rem;
+}
+
+.certificate-dialog-bg {
+    background-size: contain;
+    position: fixed;
+    top: 0.3rem;
+    height: 4.76rem;
+    width: 3.04rem;
+    left: 0.36rem;
+}
+
+.cer-bottom-note {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 5.225rem;
+    height: auto;
+    width: auto;
+    position: absolute;
+    margin: 0;
+    left: 0.67rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    font-family: "PingFangSC-Regular", Helvetica, Arial, serif;
+    font-size: 0.12rem;
+    color: rgba(255, 255, 255, 1.0);
+    text-align: center;
+    line-height: 0.12rem;
+}
+
+.index-dialog-wrap .a20200205 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 2.907rem;
+    height: auto;
+    width: auto;
+    position: absolute;
+    margin: 0;
+    left: 1.55rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    font-family: "PingFangSC-Regular", Helvetica, Arial, serif;
+    font-size: 0.12rem;
+    color: rgba(0, 0, 0, 1.0);
+    text-align: center;
+    line-height: 0.16rem;
+}
+
+.index-dialog-wrap .rectangle {
+    background-color: rgba(0, 79, 226, 1.0);
+    top: 3.237rem;
+    height: 0.44rem;
+    width: 3.03rem;
+    position: absolute;
+    margin: 0;
+    left: 0.36rem;
+    border-radius: 0.04rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.poem-img {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0.44rem;
+    height: 1.93rem;
+    width: 2.215rem;
+    position: absolute;
+    margin: 0;
+    left: 0.765rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.u5173u95ed .combinedshape {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0.24rem;
+    height: 0.28rem;
+    width: 0.28rem;
+    position: absolute;
+    margin: 0;
+    left: 3.23rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.index-dialog-wrap .nick {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 2.612rem;
+    height: auto;
+    width: 1.223rem;
+    position: absolute;
+    margin: 0;
+    left: 1.26rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    font-family: "PingFangSC-Medium", Helvetica, Arial, serif;
+    font-size: 0.16rem;
+    color: rgba(0, 0, 0, 1.0);
+    text-align: center;
+    line-height: 0.2rem;
+}
+
+.u6211u8981u4ee3u8a00 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 3.377rem;
+    height: auto;
+    width: auto;
+    position: absolute;
+    margin: 0;
+    left: 1.515rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    font-family: "PingFangSC-Semibold", Helvetica, Arial, serif;
+    font-size: 0.16rem;
+    color: rgba(255, 255, 255, 1.0);
+    text-align: left;
+    letter-spacing: 0.02rem;
+    line-height: 0.16rem;
+}
+
+.u77e9u5f62 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0;
+    height: 3.89rem;
+    width: 3.75rem;
+    position: absolute;
+    margin: 0;
+    left: 0rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.u77e9u5f621 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0.045rem;
+    height: 3.93rem;
+    width: 3.67rem;
+    position: absolute;
+    margin: 0;
+    left: 0.065rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.common-bg-top {
+    position: absolute;
+    width: 3.75rem;
+    height: 2.395rem;
+    top: 0;
+    left: 0;
+}
+
+.dialog-bg {
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/*************extra added ends*************/
+
+/*************ams dialog starts***************/
+[class*=embed-btn] {
+    -webkit-user-select: none;
+    -webkit-box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    font-weight: 700
+}
+
+.embed-btn-mod {
+    border: 0 none;
+    color: #0079ff;
+    background: 0;
+    margin: 0
+}
+
+.embed-btn-mod:active {
+    background: #d9d9d9
+}
+
+.mod-game-dialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+.mod-game-dialog-content {
+    box-sizing: border-box;
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    width: 270px;
+    min-height: 80px;
+    background-color: #FFF;
+    border-radius: 6px
+}
+
+.mod-game-dialog-content .mod-txt {
+    font-size: 14px;
+    color: #3a3a3a;
+    border-bottom: #c8c7cc 1px solid;
+    background-image: none;
+    padding: 16px 14px
+}
+
+.mod-game-dialog-content .mod-btn {
+    display: 0
+}
+
+.mod-game-dialog-content .mod-btn button {
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 27px;
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    border-right: #c8c7cc 1px solid;
+    background-image: none;
+    padding: 8px 2px
+}
+
+.mod-game-dialog-content .mod-btn button:last-child {
+    border-right: 0
+}
+
+.mod-game-dialog-content .mod-btn button:active {
+    background: rgba(0, 0, 0, .1)
+}
+
+@media screen and -webkit-min-device-pixel-ratio20 {
+    .mod-game-dialog-content .mod-txt {
+        background: 0 left bottom repeat-x;
+        border-bottom: 0;
+        background-size: 100% 1px;
+        -wekit-background-size: 100% 1px
+    }
+
+    .mod-game-dialog-content .mod-btn button {
+        background: 0 right top repeat-y;
+        border-right: 0;
+        background-size: 1px 100%;
+        -wekit-background-size: 1px 100%
+    }
+
+    .mod-game-dialog-content .mod-btn button:last-child {
+        background-image: none
+    }
+}
+
+.mod-game-dialog-content .mod-btn {
+    display: box;
+    display: -webkit-box
+}
+
+/*************ams dialog ends***************/
+
+/**************loading starts***************/
+.zero-ui-dialog {
+    -webkit-transition: opacity 200ms;
+    opacity: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    color: #000;
+}
+
+.zero-ui-dialog-notice {
+    background: transparent;
+}
+
+.dialog-notice, .zero-dialog-notice-container {
+    width: 130px;
+    height: 110px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 6px;
+    color: #fff;
+}
+
+.zero-dialog-notice-container > span.zero-ui-loading-tips {
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    display: block;
+    font-size: 14px;
+    padding: 0 4px;
+}
+
+.zero-ui-loading-circle {
+    width: 37px;
+    height: 37px;
+    position: relative
+}
+
+.zero-ui-loading-circle > div {
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    left: 3px;
+    top: 3px
+}
+
+.zero-ui-loading-circle > div:before {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 3px;
+    height: 8px;
+    background-color: #FFF;
+    -webkit-animation: zul-circleFadeDelay-ios 1.2s infinite ease-in-out both;
+    animation: zul-circleFadeDelay-ios 1.2s infinite ease-in-out both;
+}
+
+
+@-webkit-keyframes zul-circleFadeDelay-ios {
+    0%, 39%, 100% {
+        opacity: .3
+    }
+    40% {
+        opacity: 1
+    }
+}
+
+@keyframes zul-circleFadeDelay-ios {
+    0%, 39%, 100% {
+        opacity: .3
+    }
+    40% {
+        opacity: 1
+    }
+}
+
+.zero-ui-loading-circle .zul-circle2 {
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.zero-ui-loading-circle .zul-circle2:before {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.zero-ui-loading-circle .zul-circle3 {
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.zero-ui-loading-circle .zul-circle3:before {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+}
+
+.zero-ui-loading-circle .zul-circle4 {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.zero-ui-loading-circle .zul-circle4:before {
+    -webkit-animation-delay: -0.9000000000000001s;
+    animation-delay: -0.9000000000000001s;
+}
+
+.zero-ui-loading-circle .zul-circle5 {
+    -webkit-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotate(120deg);
+}
+
+.zero-ui-loading-circle .zul-circle5:before {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+.zero-ui-loading-circle .zul-circle6 {
+    -webkit-transform: rotate(150deg);
+    -ms-transform: rotate(150deg);
+    transform: rotate(150deg);
+}
+
+.zero-ui-loading-circle .zul-circle6:before {
+    -webkit-animation-delay: -0.7000000000000001s;
+    animation-delay: -0.7000000000000001s;
+}
+
+.zero-ui-loading-circle .zul-circle7 {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.zero-ui-loading-circle .zul-circle7:before {
+    -webkit-animation-delay: -0.6000000000000001s;
+    animation-delay: -0.6000000000000001s;
+}
+
+.zero-ui-loading-circle .zul-circle8 {
+    -webkit-transform: rotate(210deg);
+    -ms-transform: rotate(210deg);
+    transform: rotate(210deg);
+}
+
+.zero-ui-loading-circle .zul-circle8:before {
+    -webkit-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+}
+
+.zero-ui-loading-circle .zul-circle9 {
+    -webkit-transform: rotate(240deg);
+    -ms-transform: rotate(240deg);
+    transform: rotate(240deg);
+}
+
+.zero-ui-loading-circle .zul-circle9:before {
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s;
+}
+
+.zero-ui-loading-circle .zul-circle10 {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.zero-ui-loading-circle .zul-circle10:before {
+    -webkit-animation-delay: -0.30000000000000004s;
+    animation-delay: -0.30000000000000004s;
+}
+
+.zero-ui-loading-circle .zul-circle11 {
+    -webkit-transform: rotate(300deg);
+    -ms-transform: rotate(300deg);
+    transform: rotate(300deg);
+}
+
+.zero-ui-loading-circle .zul-circle11:before {
+    -webkit-animation-delay: -0.20000000000000007s;
+    animation-delay: -0.20000000000000007s;
+}
+
+.zero-ui-loading-circle .zul-circle12 {
+    -webkit-transform: rotate(330deg);
+    -ms-transform: rotate(330deg);
+    transform: rotate(330deg);
+}
+
+.zero-ui-loading-circle .zul-circle12:before {
+    -webkit-animation-delay: -0.10000000000000009s;
+    animation-delay: -0.10000000000000009s;
+}
+
+/**************loading ends***************/
+
+/***********moved from result.html <starts>************/
+.a410 .bitmap {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0rem;
+    height: 2.395rem;
+    width: 3.75rem;
+    position: absolute;
+    margin: 0;
+    left: 0rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a410 .u201c {
+    background-color: rgba(255, 255, 255, 1.0);
+    top: 1.57rem;
+    height: 3.42rem;
+    width: 3.43rem;
+    position: absolute;
+    margin: 0;
+    left: 0.16rem;
+    border-radius: 0.04rem;
+    overflow: hidden;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a410 .u201c .u8499u7248 {
+    background-color: rgba(255, 255, 255, 1.0);
+    top: 0rem;
+    height: 3.42rem;
+    width: 3.43rem;
+    position: relative;
+    margin: 0;
+    left: 0rem;
+    border-radius: 0.04rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a410 .u7f16u7ec45 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 1.745rem;
+    height: 0.825rem;
+    width: 2.77rem;
+    position: absolute;
+    margin: 0;
+    left: 0.49rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a410 .u7f16u7ec45 .u622au81f3u76eeu524du5171u670910214u4ebau53c2u4e0eu672cu6b21u6d3bu52a8u5f85 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0.325rem;
+    height: auto;
+    width: auto;
+    position: absolute;
+    margin: 0;
+    left: 0.19rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    font-family: "PingFangSC-Regular", Helvetica, Arial, serif;
+    font-size: 0.14rem;
+    color: rgba(0, 0, 0, 1.0);
+    text-align: center;
+    line-height: 0.25rem;
+}
+
+.a410 .u7f16u7ec45 .u611fu8c22u4f60u6210u4e3au7b2c1024u4f4du79d1u5b66u9632u75abu5927u4f7f {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0rem;
+    height: auto;
+    width: auto;
+    position: absolute;
+    margin: 0;
+    left: 0rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    font-family: "TencentSansW7", Helvetica, Arial, serif;
+    font-size: 0.18rem;
+    color: rgba(0, 79, 226, 1.0);
+    text-align: center;
+    line-height: 0.27rem;
+}
+
+.a410 .u7f16u7ec4 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 5.11rem;
+    height: 0.44rem;
+    width: 3.43rem;
+    position: absolute;
+    margin: 0;
+    left: 0.16rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a410 .u7f16u7ec4 .rectangle {
+    background-color: rgba(0, 79, 226, 1.0);
+    top: 0rem;
+    height: 0.44rem;
+    width: 3.43rem;
+    position: absolute;
+    margin: 0;
+    left: 0rem;
+    border-radius: 0.04rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a410 .u7f16u7ec4 .u67e5u770bu6211u7684u4ee3u8a00u8bc1u4e66 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0.14rem;
+    height: auto;
+    width: auto;
+    position: absolute;
+    margin: 0;
+    left: 1.075rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    font-family: "PingFangSC-Semibold", Helvetica, Arial, serif;
+    font-size: 0.16rem;
+    color: rgba(255, 255, 255, 1.0);
+    text-align: left;
+    line-height: 0.16rem;
+}
+
+.a410 .bitmap1 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 2.71rem;
+    height: 2.05rem;
+    width: 2.455rem;
+    position: absolute;
+    margin: 0;
+    left: 0.675rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+/***********moved from result.html <ends>************/
+
+/***********moved from certificate.html <starts>************/
+.a326 .bitmap {
+    top: 0;
+    height: 4.758rem;
+    width: 3.04rem;
+    position: absolute;
+    margin: 0;
+    left: 0;
+}
+
+.certificate-dialog-bg .u5173u95ed {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0.2186rem;
+    height: 0.2267rem;
+    width: 0.2267rem;
+    position: absolute;
+    margin: 0;
+    left: 2.5506rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.certificate-dialog-bg .u5173u95ed .combinedshape {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0rem;
+    height: 0.2267rem;
+    width: 0.2267rem;
+    position: absolute;
+    margin: 0;
+    left: 0rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a326 .u7f16u7ec42 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 4.2024rem;
+    height: 0.3806rem;
+    width: 2.4049rem;
+    position: absolute;
+    margin: 0;
+    left: 0.3158rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a326 .u7f16u7ec42 .u817eu8bafu6587u65c5u9080u4f60u4e00u8d77u4e3au7231u4ee3u8a00uff0cu5b88u62a4u6b66u6c49u626bu63cf {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0.0121rem;
+    height: auto;
+    width: auto;
+    position: absolute;
+    margin: 0;
+    left: 0rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    font-family: "PingFangSC-Regular", Helvetica, Arial, serif;
+    font-size: 0.1053rem;
+    color: rgba(154, 163, 178, 1.0);
+    text-align: left;
+    line-height: 0.1781rem;
+}
+
+.a326 .u7f16u7ec42 .u7f16u7ec423 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0rem;
+    height: 0.3806rem;
+    width: 0.3806rem;
+    position: absolute;
+    margin: 0;
+    left: 2.0243rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a326 .u7f16u7ec42 .u7f16u7ec423 .u4e8cu7ef4u78011 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0rem;
+    height: 0.3806rem;
+    width: 0.3806rem;
+    position: absolute;
+    margin: 0;
+    left: 0rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a326 .u7f16u7ec424 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 3.5344rem;
+    height: 0.3401rem;
+    width: 0.5668rem;
+    position: absolute;
+    margin: 0;
+    left: 1.5182rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a326 .u7f16u7ec424 .frank {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0rem;
+    height: auto;
+    width: auto;
+    position: absolute;
+    margin: 0;
+    left: -0.004rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    font-family: "PingFangSC-Medium", Helvetica, Arial, serif;
+    font-size: 0.1296rem;
+    color: rgba(0, 0, 0, 1.0);
+    text-align: center;
+    line-height: 0.1619rem;
+}
+
+.a326 .u7f16u7ec424 .a20200205 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0.2105rem;
+    height: auto;
+    width: auto;
+    position: absolute;
+    margin: 0;
+    left: -0.004rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    font-family: "PingFangSC-Regular", Helvetica, Arial, serif;
+    font-size: 0.0972rem;
+    color: rgba(0, 0, 0, 1.0);
+    text-align: center;
+    line-height: 0.1296rem;
+}
+
+.a326 .bitmap1 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 3.4049rem;
+    height: 0.5992rem;
+    width: 0.8502rem;
+    position: absolute;
+    margin: 0;
+    left: 1.9393rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+/***********moved from certificate.html <ends>************/
+
+.a12 {
+    width: 100%;
+    min-width: 3.75rem;
+    height: 100vh;
+    min-height: 9.375rem;
+    position: relative;
+    overflow: hidden;
+    margin: 0rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgba(234, 242, 255, 1.0);
+}
+
+a {
+    text-decoration: none;
+}
+
+div {
+    -webkit-text-size-adjust: none;
+}
+
+.anima-full-width-a {
+    width: 100%;
+}
+
+.anima-full-height-a {
+    height: 100%;
+}
+
+div {
+    -webkit-text-size-adjust: none;
+}
+
+.a12 .u80ccu666fu56fe {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0rem;
+    height: 8.425rem;
+    width: 3.75rem;
+    position: absolute;
+    margin: 0;
+    left: 0rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .u80ccu666fu56fe .bitmap9 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 0rem;
+    height: 8.425rem;
+    width: 3.75rem;
+    position: absolute;
+    margin: 0;
+    left: 0rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .u7f16u7ec412 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 4.61rem;
+    height: 3.02rem;
+    width: 3.03rem;
+    position: absolute;
+    margin: 0;
+    left: 0.36rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .u7f16u7ec412 .rectangle {
+    background-color: rgba(242, 246, 255, 1.0);
+    top: 0rem;
+    height: 0.9rem;
+    width: 0.9rem;
+    position: absolute;
+    margin: 0;
+    left: 0rem;
+    border-radius: 0.02rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .u7f16u7ec412 .rectangle1 {
+    background-color: rgba(242, 246, 255, 1.0);
+    top: 0rem;
+    height: 0.9rem;
+    width: 0.9rem;
+    position: absolute;
+    margin: 0;
+    left: 1.065rem;
+    border-radius: 0.02rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .u7f16u7ec412 .rectangle2 {
+    background-color: rgba(242, 246, 255, 1.0);
+    top: 0rem;
+    height: 0.9rem;
+    width: 0.9rem;
+    position: absolute;
+    margin: 0;
+    left: 2.13rem;
+    border-radius: 0.02rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .u7f16u7ec412 .rectangle3 {
+    background-color: rgba(242, 246, 255, 1.0);
+    top: 1.06rem;
+    height: 0.9rem;
+    width: 0.9rem;
+    position: absolute;
+    margin: 0;
+    left: 0rem;
+    border-radius: 0.02rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .u7f16u7ec412 .rectangle4 {
+    background-color: rgba(242, 246, 255, 1.0);
+    top: 1.06rem;
+    height: 0.9rem;
+    width: 0.9rem;
+    position: absolute;
+    margin: 0;
+    left: 1.065rem;
+    border-radius: 0.02rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .u7f16u7ec412 .rectangle5 {
+    background-color: rgba(242, 246, 255, 1.0);
+    top: 1.06rem;
+    height: 0.9rem;
+    width: 0.9rem;
+    position: absolute;
+    margin: 0;
+    left: 2.13rem;
+    border-radius: 0.02rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .u7f16u7ec412 .rectangle6 {
+    background-color: rgba(242, 246, 255, 1.0);
+    top: 2.12rem;
+    height: 0.9rem;
+    width: 0.9rem;
+    position: absolute;
+    margin: 0;
+    left: 0rem;
+    border-radius: 0.02rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .u7f16u7ec412 .rectangle7 {
+    background-color: rgba(242, 246, 255, 1.0);
+    top: 2.12rem;
+    height: 0.9rem;
+    width: 0.9rem;
+    position: absolute;
+    margin: 0;
+    left: 1.065rem;
+    border-radius: 0.02rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .u7f16u7ec412 .rectangleu5907u4efd {
+    background-color: rgba(242, 246, 255, 1.0);
+    top: 2.12rem;
+    height: 0.9rem;
+    width: 0.9rem;
+    position: absolute;
+    margin: 0;
+    left: 2.13rem;
+    border-radius: 0.02rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .a20124 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 3.48rem;
+    height: auto;
+    width: 1.121rem;
+    position: absolute;
+    margin: 0;
+    left: 1.29rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    font-family: "TencentSansW7";
+    font-size: 0.36rem;
+    color: rgba(255, 69, 31, 1.0);
+    text-align: center;
+    line-height: 0.32rem;
+}
+
+.a12 .bitmap {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 4.74rem;
+    height: 0.6rem;
+    width: 0.505rem;
+    position: absolute;
+    margin: 0;
+    left: 0.56rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .bitmap1 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 4.76rem;
+    height: 0.58rem;
+    width: 0.555rem;
+    position: absolute;
+    margin: 0;
+    left: 1.6rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .bitmap2 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 4.725rem;
+    height: 0.615rem;
+    width: 0.555rem;
+    position: absolute;
+    margin: 0;
+    left: 2.665rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .bitmap3 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 5.755rem;
+    height: 0.64rem;
+    width: 0.555rem;
+    position: absolute;
+    margin: 0;
+    left: 0.53rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .bitmap4 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 5.84rem;
+    height: 0.56rem;
+    width: 0.555rem;
+    position: absolute;
+    margin: 0;
+    left: 1.6rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .bitmap5 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 5.85rem;
+    height: 0.55rem;
+    width: 0.555rem;
+    position: absolute;
+    margin: 0;
+    left: 2.665rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .bitmap6 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 6.8rem;
+    height: 0.66rem;
+    width: 0.555rem;
+    position: absolute;
+    margin: 0;
+    left: 0.535rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .bitmap7 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 6.88rem;
+    height: 0.575rem;
+    width: 0.555rem;
+    position: absolute;
+    margin: 0;
+    left: 1.6rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
+
+.a12 .bitmap8 {
+    background-color: rgba(255, 255, 255, 0.0);
+    top: 6.86rem;
+    height: 0.595rem;
+    width: 0.55rem;
+    position: absolute;
+    margin: 0;
+    left: 2.665rem;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+}
