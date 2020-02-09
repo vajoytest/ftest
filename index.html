@@ -15,13 +15,12 @@
           content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <script src="./js/rem.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/canvas2html.js"></script>
     <link rel="stylesheet" href="./css/tfont.css">
     <link rel="stylesheet" href="./css/index.css">
     <style>
-        div#raw-certificate{
+        /*div#raw-certificate{
             top: 1rem;
-        }
+        }*/
     </style>
 </head>
 
@@ -31,7 +30,7 @@
 <div style="width: 3.75rem; position:relative; margin:auto;">
     <!--结果页的开始-->
     <div class="a410">
-        hello3
+        新方案
     </div>
     <!--结果页的结束-->
 </div>
@@ -60,22 +59,22 @@
     <div id="raw-certificate">
         <img src="img/certificate-bg/Image 1.png" class="bitmap" />
         <div class="u7f16u7ec42">
-            <div class="u817eu8bafu6587u65c5u9080u4f60u4e00u8d77u4e3au7231u4ee3u8a00uff0cu5b88u62a4u6b66u6c49u626bu63cf">
+            <div id="img-notice" class="u817eu8bafu6587u65c5u9080u4f60u4e00u8d77u4e3au7231u4ee3u8a00uff0cu5b88u62a4u6b66u6c49u626bu63cf">
                 一起一起来测试截图能力呗<br />12345
             </div>
             <div class="u7f16u7ec423">
-                <img src="./img/3-2-6-u4e8cu7ef4u7801-1@2x.png" class="u4e8cu7ef4u78011" />
+                <img id="img-code" src="./img/3-2-6-u4e8cu7ef4u7801-1@2x.png" class="u4e8cu7ef4u78011" />
             </div>
         </div>
         <div class="u7f16u7ec424">
-            <div class="frank">
+            <div id="img-nick" class="frank">
                 ewwrerer
             </div>
-            <div class="a20200205">
+            <div id="img-date" class="a20200205">
                 2000/02/05
             </div>
         </div>
-        <img src="./img/3-2-6-bitmap-1@2x.png" class="bitmap1" />
+        <img id="img-seal" src="./img/3-2-6-bitmap-1@2x.png" class="bitmap1" />
     </div>
 
     <div class="cer-bottom-note">长按图片保存到手机，分享到朋友圈完成代言</div>
@@ -113,7 +112,9 @@
     </div>
 </article>
 <!--（异常提示）弹窗结束-->
-
+<!--<canvas id="myCanvas" width="260" height="406" >-->
+<!--    您的浏览器不支持canvas，建议使用最新版的Chrome-->
+<!--</canvas>-->
 <script>
     function toggleLoading(isShow) {
         let operate = isShow ? 'removeClass' : 'addClass'
@@ -125,20 +126,74 @@
         $('#zero-dialog')[operate]('hide')
     }
 
+    //获取样式属性值
+    function getStyle(obj, attr) {
+        return window.getComputedStyle(obj, false)[attr];
+    }
+
     // 生成证书图片
     function generateCertificateImg(callback) {
         let raw = document.getElementById('raw-certificate');
-        let rect = raw.getBoundingClientRect();
-        html2canvas(raw, {
-            width: rect.width,//设置canvas尺寸与所截图尺寸相同，防止白边
-            height: rect.height,//防止白边
-        }).then(function(canvas) {
-            var dataURL = canvas.toDataURL("image/png");
-            document.getElementById('img-certificate').style.backgroundImage = 'url(' + dataURL + ')';
+        let rawRect = raw.getBoundingClientRect();
+        // html2canvas(raw, {
+        //     width: rect.width,//设置canvas尺寸与所截图尺寸相同，防止白边
+        //     height: rect.height,//防止白边
+        // }).then(function(canvas) {
+        //     var dataURL = canvas.toDataURL("image/png");
+        //     document.getElementById('img-certificate').style.backgroundImage = 'url(' + dataURL + ')';
+        //     callback && callback();
+        // }).catch(() => {
+        //     alert('9999');
+        // })
+
+        let canvas = document.createElement( 'canvas' );
+        //let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext( '2d' );
+        canvas.width = rawRect.width;
+        canvas.height = rawRect.height;
+        ctx.fillStyle = "#004BE5";
+        ctx.fillRect( 0, 0, rawRect.width, rawRect.height );
+        // 绘制最大张的背景
+        let imgBg = new Image();
+        imgBg.src = "img/certificate-bg/Image 1.png";
+        imgBg.onload = function(){
+            ctx.drawImage(imgBg, 0, 0, rawRect.width, rawRect.height );
+
+            // 绘制用户名和日期文本
+            let imgNickDom = document.getElementById('img-nick');
+            let imgNickRect = imgNickDom.getBoundingClientRect();
+            let imgDateDom = document.getElementById('img-date')
+            let imgDateRect = imgDateDom.getBoundingClientRect();
+            let nickTextSize = getStyle(imgNickDom, 'font-size');
+            ctx.fillStyle = "black";
+            ctx.textBaseline = "top";
+            ctx.font = nickTextSize + " PingFangSC-Medium, Helvetica, Arial, serif normal";
+            ctx.fillText("vajoylan", imgNickRect.left - rawRect.left, imgNickRect.top - rawRect.top);
+            ctx.fillText("2020/02/09", imgDateRect.left - rawRect.left, imgDateRect.top - rawRect.top);
+
+            // 绘制印章
+            let imgSealRect = document.getElementById('img-seal').getBoundingClientRect();
+            let imgSeal = new Image();
+            imgSeal.src = "./img/3-2-6-bitmap-1@2x.png";
+            imgSeal.onload = function(){
+                ctx.drawImage(imgSeal, imgSealRect.left - rawRect.left, imgSealRect.top - rawRect.top, imgSealRect.width, imgSealRect.height );
+            }
+        }
+        // 绘制二维码
+        let imgCodeRect = document.getElementById('img-code').getBoundingClientRect();
+        let imgCode = new Image();
+        imgCode.src = "./img/3-2-6-u4e8cu7ef4u7801-1@2x.png";
+        imgCode.onload = function(){
+            ctx.drawImage(imgCode, imgCodeRect.left - rawRect.left, imgCodeRect.top - rawRect.top, imgCodeRect.width, imgCodeRect.height );
+        }
+
+        setTimeout(() => {
+            let retImgDom = document.getElementById('img-certificate');
+            let img = document.createElement('img');//创建一个标签
+            img.setAttribute('src', canvas.toDataURL( 'image/png', 1 ));
+            retImgDom.appendChild(img);
             callback && callback();
-        }).catch(() => {
-            alert('9999');
-        })
+        }, 100);
     }
 
     // 把证书涉及的图片都先预加载完
